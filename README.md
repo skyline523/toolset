@@ -1,4 +1,4 @@
-# pkg-placeholder
+# utils
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -21,7 +21,7 @@ _description_
 
 ## License
 
-[MIT](./LICENSE) License © 2023-PRESENT [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License © 2023-PRESENT [Leet](https://github.com/skyline523)
 
 <!-- Badges -->
 
