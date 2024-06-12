@@ -1,7 +1,7 @@
 {
   "name": "@leester/toolset",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@9.1.1",
   "description": "This is my commonly used tool chain",
   "author": "Leet <programingwithli@gmail.com>",
@@ -46,7 +46,6 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "commit": "git-cz",
     "lint-staged": "lint-staged"
   },
