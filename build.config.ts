@@ -4,6 +4,7 @@ export default defineBuildConfig({
   entries: [
     'src/index',
   ],
+  externals: ['unocss'],
   declaration: true,
   clean: true,
   rollup: {
