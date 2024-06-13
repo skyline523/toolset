@@ -13,7 +13,7 @@
     "url": "git+https://github.com/skyline523/utils.git"
   },
   "bugs": "https://github.com/skyline523/utils/issues",
-  "keywords": [],
+  "keywords": ["utils", "config"],
   "sideEffects": false,
   "exports": {
     ".": {
