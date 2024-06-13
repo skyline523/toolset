@@ -1,7 +1,7 @@
 {
   "name": "@leester/toolset",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@9.1.1",
   "description": "This is my commonly used tool chain",
   "author": "Leet <programingwithli@gmail.com>",
