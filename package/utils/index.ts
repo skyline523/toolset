@@ -1,3 +1,1 @@
-export function getDevice() {
-  return 'desktop'
-}
+export * from './format'
