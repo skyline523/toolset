@@ -1,7 +1,7 @@
 {
   "name": "@leester/toolset",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "packageManager": "pnpm@9.1.1",
   "description": "This is my commonly used tool chain",
   "author": "Leet <programingwithli@gmail.com>",
@@ -13,7 +13,10 @@
     "url": "git+https://github.com/skyline523/utils.git"
   },
   "bugs": "https://github.com/skyline523/utils/issues",
-  "keywords": ["utils", "config"],
+  "keywords": [
+    "utils",
+    "config"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
