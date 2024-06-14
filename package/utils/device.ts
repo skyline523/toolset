@@ -82,10 +82,6 @@ export function isApple() {
   return appleDevicesRegExp.test(getUserAgent())
 }
 
-interface DeviceResizeWatcherOptions {
-  immediate: boolean
-}
-
 /**
  * Check if the code is running on a android device
  *
@@ -93,13 +89,30 @@ interface DeviceResizeWatcherOptions {
  */
 export const isAndroid = /Android/i.test(getUserAgent())
 
+/**
+ * @category device
+ */
+interface DeviceResizeWatcherOptions {
+  // 是否在页面加载就执行回调
+  immediate: boolean
+}
+
+/**
+ * 监听页面尺寸变化并执行回调
+ *
+ * @param callback - 被执行的回调函数
+ *
+ * @param options - 监听器的options
+ *
+ * @category device
+ */
 export function watchResize(
   callback: () => void,
-  { immediate }: DeviceResizeWatcherOptions = { immediate: true },
+  options: DeviceResizeWatcherOptions = { immediate: true },
 ) {
   if (!isBrowser)
     return
-  if (immediate)
+  if (options.immediate)
     window.addEventListener('load', callback, false)
 
   window.addEventListener(
