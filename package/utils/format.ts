@@ -10,6 +10,21 @@ export function formatNumber(number: number) {
 }
 
 /**
+ * Format the numner to zh-cn unit number.
+ * eg: 10万 20.1万 1亿
+ * @param number
+ */
+export function formatNumberToZhCn(number: number) {
+  const theThousandsDivisor = Number.parseInt((number / 10000).toFixed(1))
+
+  if (theThousandsDivisor < 1)
+    return number
+  else if (theThousandsDivisor < 10000)
+    return `${theThousandsDivisor}万`
+  else return `${theThousandsDivisor}亿`
+}
+
+/**
  * Format the time as `yyyy-MM-dd HH:mm:ss`
  *
  * @param time - a timestamp or a date object
